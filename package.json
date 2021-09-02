@@ -6,6 +6,8 @@
   "author": "Mateus Barbosa <mateusx@poli.ufrj.br>",
   "license": "MIT",
   "scripts": {
+    "test": "jest --passWithNoTests",
+    "test-coverage": "yarn test --coverage",
     "format": "prettier --write '**/*.{js,json,md}'",
     "prepare": "husky install"
   },
@@ -18,6 +20,7 @@
   },
   "devDependencies": {
     "husky": "^7.0.2",
+    "jest": "^27.1.0",
     "prettier": "^2.3.2"
   }
 }
