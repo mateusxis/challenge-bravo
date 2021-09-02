@@ -8,6 +8,7 @@
   "scripts": {
     "test": "jest --passWithNoTests",
     "test-coverage": "yarn test --coverage",
+    "lint": "eslint .",
     "format": "prettier --write '**/*.{js,json,md}'",
     "prepare": "husky install"
   },
@@ -19,6 +20,11 @@
     "url": "https://github.com/mateusxis/challenge-bravo.git/issues"
   },
   "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-security": "^1.4.0",
     "husky": "^7.0.2",
     "jest": "^27.1.0",
     "prettier": "^2.3.2"
