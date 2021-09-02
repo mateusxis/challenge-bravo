@@ -5,11 +5,17 @@
   "main": "index.js",
   "author": "Mateus Barbosa <mateusx@poli.ufrj.br>",
   "license": "MIT",
+  "scripts": {
+    "format": "prettier --write '**/*.{js,json,md}'"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mateusxis/challenge-bravo.git.git"
   },
   "bugs": {
     "url": "https://github.com/mateusxis/challenge-bravo.git/issues"
+  },
+  "devDependencies": {
+    "prettier": "^2.3.2"
   }
 }
