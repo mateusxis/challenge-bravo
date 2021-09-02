@@ -19,6 +19,19 @@
   "bugs": {
     "url": "https://github.com/mateusxis/challenge-bravo.git/issues"
   },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "jest --bail --findRelatedTests",
+      "prettier --write"
+    ],
+    "*.json": [
+      "prettier --write"
+    ],
+    "*.md": [
+      "prettier --write"
+    ]
+  },
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
@@ -27,6 +40,7 @@
     "eslint-plugin-security": "^1.4.0",
     "husky": "^7.0.2",
     "jest": "^27.1.0",
+    "lint-staged": "^11.1.2",
     "prettier": "^2.3.2"
   }
 }
