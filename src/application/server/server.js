@@ -3,7 +3,7 @@ const bodyParser = require('koa-bodyparser');
 const compress = require('koa-compress');
 const cors = require('@koa/cors');
 const helmet = require('koa-helmet');
-const KoaLogger = require('koa-logger');
+const koaLogger = require('koa-logger');
 
 if (process.env.NODE_ENV !== 'production') {
   require('dotenv').config();
@@ -13,7 +13,7 @@ module.exports = ({ router }) => {
   const app = new Koa();
 
   app
-    .use(new KoaLogger())
+    .use(koaLogger())
     .use(helmet())
     .use(compress())
     .use(cors())
