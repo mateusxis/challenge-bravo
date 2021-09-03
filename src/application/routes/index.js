@@ -5,7 +5,7 @@ module.exports = () => {
 
   const router = new Router();
 
-  router.use('/', rootRouter.routes(), rootRouter.allowedMethods());
+  router.use('', rootRouter.routes(), rootRouter.allowedMethods());
 
   return router;
 };
