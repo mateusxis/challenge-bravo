@@ -6,6 +6,8 @@
   "author": "Mateus Barbosa <mateusx@poli.ufrj.br>",
   "license": "MIT",
   "scripts": {
+    "start": "node index.js",
+    "start-dev": "nodemon --inspect=0.0.0.0:5858 index.js",
     "test": "jest --passWithNoTests",
     "test-coverage": "yarn test --coverage",
     "lint": "eslint .",
@@ -52,6 +54,7 @@
     "husky": "^7.0.2",
     "jest": "^27.1.0",
     "lint-staged": "^11.1.2",
+    "nodemon": "^2.0.12",
     "prettier": "^2.3.2"
   }
 }
