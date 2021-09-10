@@ -37,6 +37,7 @@
   "dependencies": {
     "@koa/cors": "^3.1.0",
     "awilix": "^5.0.1",
+    "ioredis": "^4.27.9",
     "koa": "^2.13.1",
     "koa-bodyparser": "^4.3.0",
     "koa-compress": "^5.1.0",
