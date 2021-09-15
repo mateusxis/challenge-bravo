@@ -14,7 +14,7 @@ module.exports = () => {
       throw new Error('"PORT_SERVER" must be defined.');
     }
 
-    return process.env.PORT_SERVER;
+    return parseInt(process.env.PORT_SERVER, 10);
   };
 
   const getHostRedis = () => {
@@ -30,13 +30,24 @@ module.exports = () => {
       throw new Error('"PORT_REDIS" must be defined.');
     }
 
-    return process.env.PORT_REDIS;
+    return parseInt(process.env.PORT_REDIS, 10);
+  };
+
+  const getUriMongo = () => {
+    if (!process.env.URI_MONGO) {
+      throw new Error('"URI_MONGO" must be defined.');
+    }
+
+    const connectUri = process.env.URI_MONGO;
+
+    return connectUri;
   };
 
   return {
     portServer: getPortServer(),
     hostRedis: getHostRedis(),
     portRedis: getPortRedis(),
-    nodeEnv: getNodeEnv()
+    nodeEnv: getNodeEnv(),
+    uriMongo: getUriMongo()
   };
 };
