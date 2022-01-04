@@ -8,7 +8,7 @@ const currency = {
       type: 'string',
       uppercase: true,
       minLength: 3,
-      maxLength: 3
+      maxLength: 4
     },
     description: {
       description: 'Currency description.',
